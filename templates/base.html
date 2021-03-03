@@ -2,9 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <!--    Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--    Font Awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--    Css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/styles.css') }}">
+
+    <title>Youtube video downloader</title>
 </head>
 <body>
+{% block content %}
+
+<div class="container">
+    <nav>
+        <div class="navbar">
+                <a href="/home"><h1><i class="fa fa-youtube-play"></i> Video downloader</h1></a>
+                <div class="us">
+                    <a href="/contact">Contact us</a>
+                    <a href="/about">About us</a>
+                </div>
+        </div>
+    </nav>
+</div>
+
+    <footer>
+        <div class="footer">
+            <a href="https://github.com/1dlvb/flask-site" target="_blank"><i class="fa fa-github">GitHub</i></a>
+            <p><i class="fa fa-copyright"></i> Copyright</p>
+        </div>
+    </footer>
+{% endblock %}
 
 </body>
 </html>
