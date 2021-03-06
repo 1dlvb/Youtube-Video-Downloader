@@ -56,15 +56,17 @@ footer{
 	margin-top: 2%;
 	text-align: center;
 }
-.download-here{
+.paste-link{
 	height: 500px;
 	background-color: #999fff;
 	display: flex;
 	justify-content: center;
 
 }
-.download-here label{
+.paste-link label{
 	font-size: 25px;
 	font-weight: 500;
 
+}
+.download{
 }
