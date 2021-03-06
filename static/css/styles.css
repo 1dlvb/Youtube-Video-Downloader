@@ -59,5 +59,12 @@ footer{
 .download-here{
 	height: 500px;
 	background-color: #999fff;
+	display: flex;
+	justify-content: center;
+
+}
+.download-here label{
+	font-size: 25px;
+	font-weight: 500;
 
 }
