@@ -16,3 +16,4 @@ function download_btn(){
 	xhr.send(jsonString);
 	console.log('JSON sent.');
 }
+
