@@ -6,7 +6,11 @@
             <h1 class="mt-3">{{ title }}</h1>
             <img src="{{preview_img}} " class="mt-3" alt="Preview">
             <h1 class="mt-3" id="video-link">{{ link }}</h1>
-            <button class="btn btn-success mt-3" type="submit" onclick="download_btn();" name="download">Download</button>
+
+            <a href="{{url_for('get_output_file', name=name)}}">
+
+                   <button class="btn btn-success mt-3" type="submit" onclick="download_btn();" name="download">Download</button>
+            </a>
 
         </div>
     </div>
