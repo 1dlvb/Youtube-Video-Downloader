@@ -4,7 +4,9 @@ from downloader import YtDownloader, preview_image
 import os
 import sqlite3 as sq
 from random import randint
+
 app = Flask(__name__)
+
 
 yt = YtDownloader()
 v_list = []
@@ -73,4 +75,4 @@ def download():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)     # remove this later
+    app.run(debug=False)
