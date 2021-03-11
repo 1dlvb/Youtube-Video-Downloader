@@ -70,3 +70,16 @@ footer{
 }
 .download{
 }
+.contact{
+	text-decoration: none;
+	color:#000;
+}
+.contact a, label{
+	text-decoration: none;
+	font-size: 35px;
+	color:#000;
+}
+.contact a:hover{
+	transition: .3s;
+	color: red;
+}
