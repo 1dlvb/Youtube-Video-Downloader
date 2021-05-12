@@ -13,7 +13,7 @@ v_list = []
 with sq.connect('database.db', check_same_thread=False) as db:
     cur = db.cursor()  # Cursor
 
-    # budget table
+    # table
     cur.execute("""CREATE TABLE IF NOT EXISTS data(
               id INTEGER PRIMARY KEY AUTOINCREMENT,
               link TEXT DEFAULT 0 NOT NULL
